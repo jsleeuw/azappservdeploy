@@ -1,0 +1,14 @@
+{
+  "name": "azappservdeploy",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/jsleeuw/azappservdeploy.git",
+  "author": "jonathan sleeuw <jsleeuw@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "fastify": "^3.21.5"
+  },
+  "scripts": {
+    "start": "node index.js"
+  }
+}
