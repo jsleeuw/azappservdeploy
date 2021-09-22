@@ -12,5 +12,5 @@ fastify.listen(port, "0.0.0.0", async function (error, address) {
     fastify.log.error(error)
     process.exit(1)
   }
-  fastify.log.info(`server listening on ${address}`)
+  fastify.log.info(`server is listening on ${address}`)
 })
