@@ -7,12 +7,10 @@ fastify.get("/", async (request, reply) => {
 })
 
 // Run the server!
-const start = async () => {
-  try {
-    await fastify.listen(8080)
-  } catch (err) {
-    fastify.log.error(err)
+fastify.listen(port, "0.0.0.0", async function (error, address) {
+  if (error) {
+    fastify.log.error(error)
     process.exit(1)
   }
-}
-start()
+  fastify.log.info(`server listening on ${address}`)
+})
