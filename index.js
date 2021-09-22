@@ -1,6 +1,6 @@
 // Require the framework and instantiate it
 const fastify = require("fastify")({ logger: true })
-
+const port = process.env.PORT
 // Declare a route
 fastify.get("/", async (request, reply) => {
   return { hello: "world" }
